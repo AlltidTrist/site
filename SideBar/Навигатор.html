@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Навигатор</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<div class="sidebar">
+    <div class="logo_content">
+        <div class="logo">
+            <i class='bx bxl-youtube' ></i>
+            <div class="logo_name">
+                Name of logo
+            </div>
+        </div>
+        <i class='bx bx-menu' id="btn"></i>
+    </div>
+    <ul class="navigation">
+        <li>
+            <span class="logo_image search"><ion-icon name="search-outline" id="search"></ion-icon></span>
+            <input type="text" placeholder="Поиск...">
+            <span class="tooltip">Поиск</span>
+        </li>
+        <li>
+            <a href="Главная.html">
+                <span class="logo_image"><ion-icon name="home-outline"></ion-icon></span>
+                <span class="links_name">Главная</span>
+            </a>
+            <span class="tooltip">Главная</span>
+        </li>
+        <li>
+            <a href="Навигатор.html">
+                <span class="logo_image" style="background: white; color: #12101d;"><ion-icon name="compass-outline"></ion-icon></span>
+                <span class="links_name">Навигатор</span>
+            </a>
+            <span class="tooltip">Навигатор</span>
+        </li>
+        <li>
+            <a href="Подписки.html">
+                <span class="logo_image"><ion-icon name="albums-outline"></ion-icon></span>
+                <span class="links_name">Подписки</span>
+            </a>
+            <span class="tooltip">Подписки</span>
+        </li>
+        <li>
+            <a href="Библиотека.html">
+                <span class="logo_image"><ion-icon name="library-outline"></ion-icon></span>
+                <span class="links_name">Библиотека</span>
+            </a>
+            <span class="tooltip">Библиотека</span>
+        </li>
+        <li>
+            <a href="История.html">
+                <span class="logo_image"><ion-icon name="time-outline"></ion-icon></span>
+                <span class="links_name">История</span>
+            </a>
+            <span class="tooltip">История</span>
+        </li>
+        <li>
+            <a href="Ваши%20видео.html">
+                <span class="logo_image"><ion-icon name="videocam-outline"></ion-icon></span>
+                <span class="links_name">Ваши видео</span>
+            </a>
+            <span class="tooltip">Ваши видео</span>
+        </li>
+        <li>
+            <a href="Смотреть%20позже.html">
+                <span class="logo_image"><ion-icon name="alarm-outline"></ion-icon></span>
+                <span class="links_name">Смотреть позже</span>
+            </a>
+            <span class="tooltip">Смотреть позже</span>
+        </li>
+        <li>
+            <a href="Понравившиеся.html">
+                <span class="logo_image"><ion-icon name="thumbs-up-outline"></ion-icon></span>
+                <span class="links_name">Понравившиеся</span>
+            </a>
+            <span class="tooltip">Понравившиеся</span>
+        </li>
+    </ul>
+</div>
+<div class="home_content">
+    <div class="text">Home content</div>
+</div>
+<script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+    let searchBtn = document.querySelector(".search")
+
+    btn.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+    searchBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+    }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
